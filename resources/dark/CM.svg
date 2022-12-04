@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .CM {
+            stroke: beige;
+            fill: none;
+            stroke-width: 3;
+        }
+        .CMinner {
+            stroke: beige;
+            fill: none;
+            stroke-width: 1;
+        }
+        .type{
+            stroke: green;
+            stroke-width: 1;
+            font-size: 10px;
+            font-family: Helvetica;
+            font-weight: 100;
+            font-style: normal;
+        }
+        .tag{
+            stroke: lightseagreen;
+            stroke-width: 1;
+            font-size: 10px;
+            font-family: Helvetica;
+            font-weight: 100;
+            font-style: normal;
+        }
+        .command{
+            stroke: peru;
+            stroke-width: 1;
+            align-content: center;
+            text-align: center;
+            text-anchor: middle;
+            font-size: 16px;
+            font-family: Helvetica;
+            font-weight: 100;
+            font-style: normal;
+
+        }
+    </style>
+    <defs>
+        <g id="PrcMdl" class="CM">
+            <rect width="100" height="40" />
+            <rect class="CMinner" width="25" height="16" />
+            <rect class="CMinner" x="25" width="75" height="16" />
+            <text class="type" x="5" y="12">CM</text>
+            <text class="command" x="50" y="32">open | close</text>
+        </g>
+    </defs>
+    <svg id="CM00" x="0" y="0" width="100" height="40">
+        <use xlink:href="#PrcMdl">
+            
+        </use>
+        <text id="CM00.tag" class="tag" x="30" y="12">CM00</text>
+    </svg>
+    <svg id="CM01" x="0" y="50" width="100" height="40">
+        <use xlink:href="#PrcMdl">
+            
+        </use>
+        <text id="CM01.tag" class="tag" x="30" y="12">CM01</text>
+    </svg>
+</svg>
